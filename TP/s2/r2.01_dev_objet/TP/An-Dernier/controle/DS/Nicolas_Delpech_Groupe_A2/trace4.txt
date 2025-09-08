@@ -1,0 +1,151 @@
+-----------------------
+     Exercice 4
+-----------------------
+
+|Les châteaux de bourgogne|2|4|
+|6 qui prend|2|10|
+|Service Compris|2|6|
+|Dobble|2|8|
+|Jungle Speed|2|10|
+|Time's up|4|12|
+|Lorenzo Le Magnifique|2|4|
+|Banquet Royal|2|4|
+|Armadora|2|4|
+|Kingdomino Duel|2|2|
+|Kingdomino|2|4|
+|Slide Quest|2|4|
+|Abyss|2|4|
+|Conspiracy ( Abyss Universe)|2|4|
+|Les Bâtisseurs - Moyen Âge|2|4|
+|Les Batisseurs - Antiquité|2|4|
+|Imaginarium|2|5|
+|Les Inventeurs|2|5|
+|L'île interdite|2|4|
+|Twin it|1|99|
+|Les Aventuriers du Rail : Londres|2|4|
+|Five Tribes|2|4|
+|Les Aventuriers du rail : europe|2|5|
+|Les Aventuriers du Rail : Autour du monde|2|5|
+|Les Aventuriers du Rail : The United Kingdom|2|5|
+|Small World|2|5|
+|Small World Underground|2|5|
+|Les Aventuriers du Rail - Japon & Italie|2|6|
+|Les chevaliers de la Table Ronde|3|7|
+|Robinson Crusoé|1|4|
+|The Resistance|5|0|
+|Agricola : terre d'élevage|2|2|
+|Catan Duel|2|2|
+|Les Piliers de la terre|2|4|
+|A la gloire d'Odin|1|4|
+|La route du Verre|1|4|
+|L'age de Pierre|2|4|
+|Pandémie|2|4|
+|Bruges|2|4|
+|Puerto Rico|2|5|
+|Terra Mystica|2|5|
+|Caverna|1|7|
+|Gugong|1|5|
+|Architectes du royaume de l'ouest|2|5|
+|Bruxelles 1897|2|4|
+|Bruxelles 1893|2|5|
+|Great Western|2|4|
+|Descendance|2|4|
+|Cloche Merle|2|4|
+|Dany|3|8|
+|Time Line|2|8|
+|Rajas of Ganges|2|4|
+|Mr Jack|2|2|
+|Mr Jack pocket|2|2|
+|Tzolk'in|2|4|
+|18 minutes pour un empire|2|4|
+|Welcome to the Dungeon|2|4|
+|Andor|2|4|
+|Exit : l'ile oublié|1|4|
+|Exit : Le cadavre de l'Orient Express|1|4|
+|Exit : Le Laboratoire Secret|1|4|
+|Exit : Le Château Interdit|1|4|
+|Space Alert|1|5|
+|Detective|1|5|
+|Code Names|2|8|
+|Time Bomb|4|8|
+|Terraforming Mars|1|5|
+|Junta|2|7|
+|Huns|2|4|
+|Nations|1|5|
+|One Key|2|6|
+|Dixit|3|6|
+|Isle of Skye|2|5|
+|Lewis & Clark|1|5|
+|Colt Express|2|6|
+|La guerre des motouns|2|4|
+|Skull & Roses|3|6|
+|Mafia de cuba|6|12|
+|Les Loups-Garous de Thiercelieux|8|18|
+|Takenoko|2|4|
+|Orléans|2|4|
+|Cyclade|2|5|
+|Room 25|1|6|
+|Minivilles|2|4|
+|Insider|4|8|
+|Par Odin|1|1|
+|Fiesta de los Muertos|4|8|
+|Reykholt|1|4|
+|The mind|2|4|
+|Cartagena|2|5|
+|Risk|2|5|
+|Solenia|1|4|
+|Tournay|2|4|
+|Troyes|2|4|
+|Pillards de la mer du Nord|2|4|
+|Mice and Mystics|1|4|
+|Azul|2|4|
+|Century : la route des épices|2|5|
+|Loup-Garou pour une nuit|3|10|
+|7 wonders Duel|2|2|
+|Ghost Stories|1|4|
+|7 wonders|2|7|
+|Concept|4|12|
+|Mascarade|2|13|
+|Les tavernes de la vallée profonde|2|4|
+|Decrypto|3|8|
+|Magic Maze|1|8|
+|L'aventurier|1|1|
+|Pingouins patineurs|1|1|
+|Les Murailles de Troie|1|1|
+|Viking : Au coueur du MaelStrom|1|1|
+|Ganymede|2|4|
+|GreenVille|3|6|
+|Orbis|2|4|
+|Splendor|2|4|
+|T.I.M.E Stories - Asylum|2|4|
+|T.I.M.E Stories - La prophétie des dragons|2|4|
+|T.I.M.E Stories - Sous le masque|2|4|
+|T.I.M.E Stories - Lumen Fidei|2|4|
+|T.I.M.E Stories - Frere de la Côte|2|4|
+|T.I.M.E Stories - Madame|2|4|
+|Unlock : Escape Adventures|2|6|
+|Unlock : Secret Adventures|2|6|
+|Unlock : Mystery Adventures|2|6|
+|Unlock : Timeless Adventures|2|6|
+|Munchkin|3|6|
+|Viticulture|1|6|
+|Tajuto|2|4|
+|RushHour|1|1|
+|Solitaire chess|1|1|
+|Gaïa|2|5|
+|Citadelles|2|8|
+|Shakespeare|1|4|
+|Myrmes|2|4|
+|Agricola|1|5|
+|Le Havre|1|5|
+|Olympos|3|5|
+|Next Station : London|1|4|
+|Next Station : Tokyo|1|4|
+|Faraway|2|6|
+|Planet Unknown|1|6|
+|Loco Momo|2|4|
+|Forêt Mixte|2|5|
+|Parks|1|5|
+|Biomos|2|4|
+|Hadara|2|5|
+|Rauha|2|5|

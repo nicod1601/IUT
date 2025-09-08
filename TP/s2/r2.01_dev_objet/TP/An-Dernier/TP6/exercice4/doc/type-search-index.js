@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"quarto","l":"Controleur"},{"p":"quarto.ihm","l":"FramePlateau"},{"p":"quarto.metier","l":"Plateau"}];updateSearchResults();

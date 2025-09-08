@@ -1,0 +1,10 @@
+Nom	Prénom	Moyenne générale	Validation du semestre
+Assin	Marc	11,35	Semestre validé
+Autine	Guy	11,70	Semestre non validé
+Haiting	Marc	11,32	Semestre validé
+Lyse	Anna	13,17	Semestre validé
+Masse	Sarah	9,30	Semestre non validé
+Menvussa	Gérard	19,10	Semestre validé
+Nanas	Juda	9,50	Semestre non validé
+Orak	Anne	11,03	Semestre non validé
+Vigotte	Sarah	11,62	Semestre validé

@@ -1,0 +1,81 @@
+public class Bac
+DEBUT
+	privé nom      : chaine de caractère
+	privé poid      : réel
+	privé tonnage : réel
+	privé charge : caractère
+
+	privé tablierGaucheLevee : booléen
+	privé tablierDroitLevee     : booléen
+
+	public Bac( nom : chaine de caractère, tonnage : réel, positon : caractère)
+	début 
+		this.nom      = nom
+		this.tonnage = tonnage
+		this.positon  = positon
+		this.charge   = 0.0
+
+		tablierDroitLevee     = vrai
+		tablierGaucheLevee = vrai
+	fin
+
+	public Bac (nom : chaine de caractère, poid : réel)
+	début 
+		this.(nom, tonnage, 'D')
+	fin
+
+	public amarrer()
+	début 
+		si this.position = 'D' alors
+			this.tablierDroitLevee <-- faux
+		sinon
+			this.tablierGaucheLevee <-- faux
+		fsi
+	fin
+
+	public demarrer()
+	début 
+		this.tablierDroitLevee <-- tablierGaucheLevee <-- vrai
+	fin
+
+	public traverser() -- > booléen
+	début 
+		si non tablierDroitLevee ou  non tablierGaucheLevee alors
+			retourne faux
+		fsi
+
+		si this.position = 'D' alors
+			this.position <-- 'G'
+		sinon
+			this.positon <-- 'D'
+		fsi
+
+		retourne vrai
+	fin
+
+	public embarquer(charge : réel) -- > booléen
+	début 
+		si this.tablierDroitLevee  et tablierGaucheLevee alors
+			retourne faux
+		fsi
+
+		si this.charge < 0 alors retourne faux fsi 
+
+		si charge + this.charge > this.tonnage alors
+			retourne faux
+		fsi
+			
+		this.charge <-- this.charge + charge 
+
+		retourne vrai 
+	fin
+
+	public toString()
+	début 
+		str : chaine de caractère
+
+		str <-- " Plateau  : " © 
+	fin
+FIN
+
+

@@ -1,0 +1,209 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color: #252526;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #d4d4d4;
+    line-height: 1.6;
+}
+
+h1, h2, p {
+    margin-bottom: 1px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container img{
+    width: 400px;
+}
+
+/* Header Styles */
+header {
+    background-image: url(../Elden-Ring/img/fond-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Presentation Section */
+#presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+#presentation .image-container {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.game-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-image:hover {
+    transform: scale(1.05);
+}
+
+#presentation .description {
+    flex: 1;
+    padding: 20px;
+    background-color: #252526;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+#presentation .description h2 {
+    font-size: 2.5rem;
+    color: #61dafb;
+}
+
+#presentation .description p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #d4d4d4;
+}
+
+#presentation .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Gameplay Video Section */
+#gameplay {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#gameplay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #61dafb;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #007acc;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Styles pour le tableau */
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin: 20px 0;
+    font-size: 1rem;
+    background-color: #121212;
+    color: #d4d4d4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Styles pour les en-têtes */
+thead th {
+    background-color: #4b4b4b; /* Fond des en-têtes en gris foncé */
+    color: #e6e6e6; /* Couleur claire pour le texte des en-têtes */
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #6c757d; /* Bordure grise */
+    text-transform: uppercase;
+    font-family: 'Times New Roman', serif; /* Police style médiéval */
+}
+
+/* Styles pour le corps du tableau */
+tbody tr {
+    border-bottom: 1px solid #333; /* Bordure des lignes */
+    transition: background-color 0.3s ease;
+}
+
+/* Styles pour les lignes */
+tbody tr:nth-child(even) { /* Style du fond de la ligne paire */
+    background-color: #222; /* Fond plus sombre pour les lignes paires */
+}
+
+tbody tr:hover { /* Style pour les lignes au survol */
+    background-color: #333; /* Fond légèrement plus clair au survol */
+    transform: scale(1.02); /* Légère augmentation de taille */
+}
+
+/* Styles pour les cellules */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #333; /* Bordure pour les cellules */
+    font-family: 'Times New Roman', serif; /* Police style médiéval */
+}
+
+/* Bordures pour les premières colonnes */
+td:first-child {
+    border-left: 4px solid #007acc; /* Bordure plus épaisse pour la première colonne */
+}
+
+/* Ajustement du texte pour chaque cellule */
+th, td {
+    text-align: left;
+}
+
+
+/* Bordures et arrondis du tableau */
+table {
+    border: 2px solid #005a9e;
+    border-radius: 8px;
+}

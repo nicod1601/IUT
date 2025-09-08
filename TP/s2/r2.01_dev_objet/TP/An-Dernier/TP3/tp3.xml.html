@@ -1,0 +1,928 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15"><meta http-equiv="content-type" content="text/html; charset=ISO-8859-15"><link rel="stylesheet" type="text/css" href="tp3.xml_fichiers/pl.css"></head><body class="indexFond2" vlink="#0000ff" text="#000000" link="#0000c0" background=""><a name="haut"></a><div style="display:table;width:100%"><div class="cadresimple" style="display: table-cell;"><table width="100%" cellspacing="0"><tbody><tr><td><a href="https://diw.iut.univ-lehavre.fr/pedago/info1/R2_01_Dev_Objet/tp/index.html"><img valign="top" src="tp3.xml_fichiers/back.gif" border="0"></a><img src="tp3.xml_fichiers/logoUniv.gif" alt="Universite du Havre" nosave="" border="0" align="bottom"></td><td><div align="center"><h2 class="javaH1">Développement Orienté Objet</h2><h3 class="javaH1">TP3 - Constructeurs et Méthodes Standards</h3><h4 class="javaH1"></h4></div></td><td align="right"><img src="tp3.xml_fichiers/diMini2009.gif" alt="Departement Informatique" nosave="" border="0"></td></tr></tbody></table></div></div><br><div style="display:table"><div class="cadresimple" style="display: table-cell;"><table cellspacing="0" border="0"><tbody><tr><td><b>Contenu de la Page</b></td></tr><tr><td colspan="2" align="top">&#8226; <a class="mlienjava" href="#id0xffffffffff9bd080">Objectifs</a></td></tr><tr><td colspan="2" align="top">&#8226; <a class="mlienjava" href="#id0xffffffffff9be500">Partie 1 : Les Constructeurs</a></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9bec80">Exercice 1 : Les valeurs par défaut</a></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9c3700">Exercice 2 : Modification constructeur</a></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9c5200">Exercice 3 : Le constructeur par défaut</a></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9ccd00">Exercice 4 : Ajout d'un compteur d'instanciation</a></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9cf300">Exercice 5 : Modifications des valeurs par défaut</a></td></tr><tr><td colspan="2" align="top">&#8226; <a class="mlienjava" href="#id0xffffffffff9d0400">Partie 2 : Les méthodes standards</a></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9d0880">Exercice 6 : la méthode toString()</a></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9d4180">Exercice 7 : la méthode </a><img style="" src="tp3.xml_fichiers/rectangle.gif" width="" height=""></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9daf00">Exercice 8 : la méthode </a><img style="" src="tp3.xml_fichiers/cercle.gif" width="" height=""></td></tr><tr><td colspan="2" align="top">&#8194;- <a class="mlienjava" href="#id0xffffffffff9dfd80">Exercice 9 : exemple de mise en application</a></td></tr></tbody></table></div></div>
+
+   
+
+
+   
+   
+
+
+   
+   
+   
+   
+   <br>
+   
+   <br><a name="id0xffffffffff9bd080"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaTitre">Objectifs</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+
+   <p class="java">
+   
+      <table name="class" style="" class="java" border="
+                        0
+                     ">
+         <tbody><tr class="table-ligne" style="">
+         
+            <td style="" rowspan="" colspan="" width="" valign="" align="">
+               <img style="" src="tp3.xml_fichiers/pieces.gif" width="" height="">
+            </td>
+            
+            <td style="" rowspan="" colspan="" width="" valign="" align="">
+               <p class="java">
+                  Nous allons à travers ce TP, mettre en évidence le 
+comportement des constructeurs et des méthodes dites standards d'une 
+classe.<br>
+                  Nous nous appuierons sur une classe volontairement simple qui évoluera au fur et à mesure des exercices.<br>
+                  Cette classe permettra de gérer des pièces (de jeu) 
+d'une forme, d'une couleur, d'une taille (hauteur en cm) données, 
+                  et également d'affecter un numéro d'ordre 
+d'instanciation.
+               </p>
+            </td>
+         </tr>
+      </tbody></table>
+      
+   
+   </p>
+   
+   <p class="java">
+		<b>CONSEIL : </b> Créer un sous-répertoire par exercice. 
+   </p>
+ 
+   
+   
+   
+   
+   <br>
+   
+   <br><a name="id0xffffffffff9be500"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaTitre">Partie 1 : Les Constructeurs</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+
+   <p class="java">
+      Rappel : le but d'un constructeur est d'initialiser l'ensemble des caractéristiques d'un objet lors de sa création.
+   </p>
+
+
+
+   
+   
+   
+
+	<br>
+	
+   <br><a name="id0xffffffffff9bec80"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 1 : Les valeurs par défaut</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+   <p class="java">
+      Soient les classes <i>Piece</i> et <i>Test1</i> suivante :
+   </p>  
+   
+   
+   <table name="class" style="" class="java" border="
+                        0
+                     ">
+      <tbody><tr class="table-ligne" style="">
+         <td style="" rowspan="" colspan="" width="" valign="" align="">
+            <code>
+            
+            
+               public class Piece                                                   <br>
+               {                                                                    <br>
+               &nbsp;&nbsp;&nbsp;private String forme;                                             <br>
+               &nbsp;&nbsp;&nbsp;private String couleur;                                           <br>
+               &nbsp;&nbsp;&nbsp;private int&nbsp;&nbsp;&nbsp;&nbsp;taille;                                            <br>
+                                                                                    <br>
+               &nbsp;&nbsp;&nbsp;public String toString()                                          <br>
+               &nbsp;&nbsp;&nbsp;{                                                                 <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "[" + 
+this.forme + " : " + this.couleur + " (" + this.taille +" cm) ]";<br>
+               &nbsp;&nbsp;&nbsp;}                                                                 <br>
+                                                                                    <br>
+               &nbsp;&nbsp;&nbsp;public Piece()                                                    <br>
+               &nbsp;&nbsp;&nbsp;{                                                                 <br>
+                                                                                    <br>
+                                                                                    <br>
+               &nbsp;&nbsp;&nbsp;}                                                                 <br>
+                                                                                    <br>
+               }                                                                    <br>
+            </code>
+         </td>
+         
+         <td style="" rowspan="" colspan="" width="" valign="" align="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+         
+         <td style="" rowspan="" colspan="" width="" valign="" align="">
+            <code>
+               public class Test1                                       <br>
+               {                                                        <br>
+               &nbsp;&nbsp;&nbsp;public static void main (String[] arg)                <br>
+               &nbsp;&nbsp;&nbsp;{                                                     <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece();                            <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1.toString() );              <br>
+               &nbsp;&nbsp;&nbsp;}                                                     <br>
+               }                                                        <br>
+            </code>
+         </td>
+      </tr>
+   </tbody></table>
+
+
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">1&nbsp;</td><td colspan="2" valign="top">
+         Compiler, exécuter
+      </td></tr>
+   </tbody></table></div></div></div>  
+   
+   <p class="java">
+      Par défaut les valeurs sont mises à null ou à 0 dans le 
+constructeur, bien que celui-ci ne fasse rien. Nous verrons 
+ultérieurement que nous pourrons nous passer 
+      de ce constructeur <b>sous certaines conditions</b>.<br>
+      Les attributs sont initialisés avec une valeur par défaut :<br>
+      <table name="class" style="" class="java" border="
+                        0
+                     ">
+         <tbody><tr class="table-ligne" style=""> <td style="" rowspan="" colspan="" width="" valign="" align="">
+      &nbsp;&nbsp;&#8226;&nbsp;
+    0    </td><td style="" rowspan="" colspan="" width="" valign="" align=""> pour les entiers, caractères et réels</td> </tr>
+         <tr class="table-ligne" style=""> <td style="" rowspan="" colspan="" width="" valign="" align="">
+      &nbsp;&nbsp;&#8226;&nbsp;
+    false</td><td style="" rowspan="" colspan="" width="" valign="" align=""> pour les booléens.                   </td> </tr>
+         <tr class="table-ligne" style=""> <td style="" rowspan="" colspan="" width="" valign="" align=""> &nbsp;            </td><td style="" rowspan="" colspan="" width="" valign="" align=""> &nbsp;                                    </td> </tr>
+         <tr class="table-ligne" style=""> <td style="" rowspan="" colspan="" width="" valign="" align="">
+      &nbsp;&nbsp;&#8226;&nbsp;
+    null </td><td style="" rowspan="" colspan="" width="" valign="" align=""> pour les types "objet".              </td> </tr>
+      </tbody></table>
+   </p>
+
+
+   
+   
+   
+   
+   <br>
+   
+   <br><a name="id0xffffffffff9c3700"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 2 : Modification constructeur</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+   
+   <p class="java">
+      <br>
+      Nous vous proposons maintenant d'écrire la classe Test2 suivante :<br>
+      <code>
+         public class Test2                                       <br>
+         {                                                        <br>
+         &nbsp;&nbsp;&nbsp;public static void main (String[] arg)                <br>
+         &nbsp;&nbsp;&nbsp;{                                                     <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece();                            <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p2 = new Piece( "Cube", "Rouge", 6 );        <br>
+
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1.toString() );              <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p2.toString() );              <br>
+         &nbsp;&nbsp;&nbsp;}                                                     <br>
+         }                                                        <br>
+      </code>
+      
+   </p>
+      
+
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">2&nbsp;</td><td colspan="2" valign="top">
+         Modifier la classe <i>Piece</i> afin de rendre possible l'exécution de la classe <i>Test2</i>
+      </td></tr>
+   </tbody></table></div></div></div>
+
+
+
+   
+   
+   
+
+	<br>
+
+   <br><a name="id0xffffffffff9c5200"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 3 : Le constructeur par défaut</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+
+   <p class="java">
+      Nous allons dans cette classe <i>Piece</i>, mettre en commentaire <b>tous</b> les constructeurs (sans paramètre, avec paramètres),<br>
+      et nous allons écrire un nouveau programme de test <i>Test3</i>
+   </p>
+   
+   <table name="class" style="" class="java" border="
+                        0
+                     ">
+      <tbody><tr class="table-ligne" style="">
+         <td style="" rowspan="" colspan="" width="" valign="" align="">
+            <code>
+               public class Piece                                                     <br>
+               {                                                                      <br>
+               &nbsp;&nbsp;&nbsp;private String forme;                                               <br>
+               &nbsp;&nbsp;&nbsp;private String couleur;                                             <br>
+               &nbsp;&nbsp;&nbsp;private int&nbsp;&nbsp;&nbsp;&nbsp;taille;                                              <br>
+                                                                                      <br>
+               &nbsp;&nbsp;&nbsp;public String toString()                                            <br>
+               &nbsp;&nbsp;&nbsp;{                                                                   <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "[" + 
+this.forme + " : " + this.couleur + " (" + this.taille +" cm) ]";  <br>
+               &nbsp;&nbsp;&nbsp;}                                                                   <br>
+                                                                                      <br>
+               <font color="#44603E">
+               &nbsp;&nbsp;&nbsp;/*public Piece()                                                    <br>
+               &nbsp;&nbsp;&nbsp;{                                                                   <br>
+                                                                                      <br>
+                                                                                      <br>
+               &nbsp;&nbsp;&nbsp;}*/                                                                 <br>
+                                                                                      <br>
+               &nbsp;&nbsp;&nbsp;...                                                                 <br>
+               &nbsp;&nbsp;&nbsp;*/                                                                  <br>
+                  </font>
+                                                                                      <br>
+               }                                                                      <br>
+            </code>
+         </td>
+
+         <td style="" rowspan="" colspan="" width="" valign="" align="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+         <td style="" rowspan="" colspan="" width="" valign="" align="">
+            <code>
+               public class Test3                                       <br>
+               {                                                        <br>
+               &nbsp;&nbsp;&nbsp;public static void main (String[] arg)                <br>
+               &nbsp;&nbsp;&nbsp;{                                                     <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece();                            <br>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1.toString() );              <br>
+               &nbsp;&nbsp;&nbsp;}                                                     <br>
+               }                                                        <br>
+            </code>
+         </td>
+      </tr>
+   </tbody></table>
+   
+   
+      
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">3.1&nbsp;</td><td colspan="2" valign="top">
+         Compiler, exécuter, conclure.
+      </td></tr>
+   </tbody></table></div></div></div>  
+
+   <p class="java">
+      Nous mettons ainsi en avant l'existence du "constructeur par défaut" qui affecte les valeurs par défaut aux attributs.
+            
+      Nous allons maintenant reprendre classe Test2 :<br>
+      <code>
+         public class Test2                                       <br>
+         {                                                        <br>
+         &nbsp;&nbsp;&nbsp;public static void main (String[] arg)                <br>
+         &nbsp;&nbsp;&nbsp;{                                                     <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece();                            <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p2 = new Piece( "Cube", "Rouge", 6 );        <br>
+                                                                  <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1.toString() );              <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p2.toString() );              <br>
+         &nbsp;&nbsp;&nbsp;}                                                     <br>
+         }                                                        <br>
+      </code>
+   </p>
+   
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">3.2&nbsp;</td><td colspan="2" valign="top">
+         remettre le constructeur paramétré à la classe <i>Piece</i> (qui devient alors <b>l'unique</b> constructeur de la Classe).<br>
+         Compiler et exécuter, conclure.
+      </td></tr>
+   </tbody></table></div></div></div>
+   
+   
+   <p class="java">
+      Nous pouvons imaginer à partir du TP précédent, une classe ne possédant que des membres <i>(attributs et méthodes)</i> de classe.<br><br>
+      Une telle classe est alors qualifier de <b>classe utilitaire</b>.<br>
+      Elle offre un ensemble de méthodes autonomes dans un environnement stable (qui n'évolue pas).<br><br>
+
+      <i>
+      par exemple pour utiliser la méthode sqrt de la classe Math, qui prend en paramètre un réel, nous n'avons 
+      pas besoin d'instancier un Objet Math dans un état donné, pour obtenir un résultat.<br><br>
+      </i>
+
+      Une classe utilitaire, n'a pas besoin d'être instancier pour être utilisée. 
+      Ce serait même une hérésie de vouloir instancier une telle classe.<br><br>
+
+      Nous vous proposons pour tester cela les deux classes suivantes :<br><br>
+
+      <code>
+      public class Util                                    <br>
+      {                                                    <br>
+      &nbsp;&nbsp;&nbsp;public static int min (int val1, int val2 )       <br>
+      &nbsp;&nbsp;&nbsp;{                                                 <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ( val1 &lt; val2 ) return val1;            <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return val2;                                   <br>
+      &nbsp;&nbsp;&nbsp;}                                                 <br>
+      &nbsp;&nbsp;&nbsp;public static int max (int val1, int val2 )       <br>
+      &nbsp;&nbsp;&nbsp;{                                                 <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ( val1 &gt; val2 ) return val1;                <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return val2;                                   <br>
+      &nbsp;&nbsp;&nbsp;}                                                 <br>
+      }                                                    <br><br>
+
+      public class TestUtil                                <br>
+      {                                                    <br>
+      &nbsp;&nbsp;&nbsp;public static void main(String[] a)               <br>
+      &nbsp;&nbsp;&nbsp;{                                                 <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Util util = new Util();                        <br>
+                                                           <br> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( Util.min ( 12, 4 ) );     <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( Util.max ( 12, 4 ) );     <br>
+      &nbsp;&nbsp;&nbsp;}                                                 <br> 
+      }                                                    <br>
+   </code>                                               
+
+
+   </p>
+
+
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">3.3&nbsp;</td><td colspan="2" valign="top">
+         Rendre non instanciable la classe Util.
+      </td></tr>
+   </tbody></table></div></div></div>
+   
+
+   
+   
+   
+
+	<br>
+	
+   <br><a name="id0xffffffffff9ccd00"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 4 : Ajout d'un compteur d'instanciation</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+
+   <p class="java">
+      L'ajout d'un compteur d'instanciation peut sembler avoir aucun 
+intérêt, il va uniquement nous servir pour les exercices suivants à 
+mettre 
+      en avant certaines notions. <br><br>
+      Ainsi nous vous proposons d'ajouter à la classe <i>Piece</i> :<br>
+      - un attribut <b>de classe</b>  nbInstance&nbsp;&nbsp;: compteur d'instance, qui sera incrémenté de 1 à chaque fois que l'on instanciera un objet.<br>
+      - un attribut <b>d'instance</b> numInstance : numéro d'ordre d'instanciation de l'objet courant.<br><br>
+      
+      La gestion des valeurs de ces attributs pourra se faire au niveau de chaque constructeur.<br><br>
+      
+      Nous vous proposons également de modifier la méthode toString() comme suit :<br>
+      <code>
+         public String toString()                                                                                      <br>
+         {                                                                                                             <br>
+         &nbsp;&nbsp;&nbsp;return "(" + xxx.numInstance + "/" + 
+xxx.nbInstance +") [" + xxx.forme + " : " + xxx.couleur + " (" + 
+xxx.taille +" cm) ]";    <br>
+         }                                                                                                             <br>
+      </code>
+      <br>
+      Attention il faudra remplacer les xxx. <br><br>
+      
+      Ce qui doit nous donner, si nous relançons le programme <i>Test2</i>, la trace d'exécution suivante :<br>
+      <code>
+         (1/2) [null : null (0 cm) ]<br>
+         (2/2) [Cube : Rouge (6 cm) ]
+      </code>
+   </p>
+
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">4&nbsp;</td><td colspan="2" valign="top">
+         Coder cette fonctionnalité au niveau de la classe <i>Piece</i>.<br>
+         Attention, la syntaxe de la méthode toString pour respecter nos recommandations, 
+         doit toujours préfixer un membre par quelquechose.
+         
+      </td></tr>
+   </tbody></table></div></div></div>
+
+
+
+   
+   
+     
+   
+   <br>
+   
+   <br><a name="id0xffffffffff9cf300"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 5 : Modifications des valeurs par défaut</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+   <p class="java">
+      Par défaut nous voulons créer des "Sphere" "Bleue" de 4 cm de hauteur.<br>
+      Vous disposez de trois solutions de codage au niveau de <i>Piece</i>. 
+
+   </p>  
+
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">5.1&nbsp;</td><td colspan="2" valign="top">
+         Donner oralement ces trois solutions.
+      </td></tr>
+      <tr><td width="3%" valign="top">5.2&nbsp;</td><td colspan="2" valign="top">
+         Implémenter ces trois solutions, et discutons.
+      </td></tr>
+   </tbody></table></div></div></div>
+   
+   <p class="java">
+      Nota : nous continuerons à utiliser <i>Test2.java</i>
+   </p>
+
+
+
+
+
+   
+   
+   
+
+   <br>
+   
+   <br><a name="id0xffffffffff9d0400"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaTitre">Partie 2 : Les méthodes standards</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+
+
+   
+   
+   
+   
+   <br><a name="id0xffffffffff9d0880"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 6 : la méthode toString()</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+   
+   <p class="java">
+      Le but de la méthode toString() est de retourner une 
+représentation textuelle d'un objet. Nous pourrions très bien utiliser 
+un 
+      autre nom, mais Java s'appuie sur ce nom de méthode pour effectuer
+ certains traitements.<br>
+      Nous allons étudier le comportement de java et de cette méthode à travers un exemple:
+   </p>
+   
+   <p class="java">
+      Reprenons encore et toujours notre classe <i>Piece</i> (munie du constructeur sans paramètre et du contructeur paramétré).
+      Ecrivons la classe <i>Test6</i> suivante :<br><br>
+      <code>
+         public class Test6                           <br>
+         {                                            <br>
+         &nbsp;&nbsp;&nbsp;public static void main (String[] arg)    <br>
+         &nbsp;&nbsp;&nbsp;{                                         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece();                <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1.toString() );  <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1 );             <br>
+         &nbsp;&nbsp;&nbsp;}                                         <br>
+         }<br>
+      </code>
+
+   </p>
+      
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">6.1&nbsp;</td><td colspan="2" valign="top">
+         Que remarquons-nous? que pouvons-nous en conclure ?<br>
+      </td></tr>
+      <tr><td width="3%" valign="top">6.2&nbsp;</td><td colspan="2" valign="top">
+         Enlever, la méthode toString() de la classe Piece, compiler, exécuter, conclure<br>
+      </td></tr>
+   </tbody></table></div></div></div>
+   
+   <br>
+   
+	<p class="java">
+		Il existe un réel avantage de ne pas mettre l'appel explicite à la méthode toString.<br>
+		Voici une illustration :
+      <code><br>
+         public class Test6Bis                        <br>
+         {                                            <br>
+         &nbsp;&nbsp;&nbsp;public static void main (String[] arg)    <br>
+         &nbsp;&nbsp;&nbsp;{                                         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = null, p2=null;              <br>
+                                                      <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p1 = new Piece();                      <br>
+         		                                       <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1 );             <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1.toString() );  <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                       <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p2 );             <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p2.toString() );  <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                       <br>
+         &nbsp;&nbsp;&nbsp;}                                         <br>
+                                                      <br>
+         }<br>
+      </code>
+		<br>
+		
+		<b>Mais est-ce un réel avantage, n'est-ce pas un risque de manipuler des objets null.</b>
+	</p>
+
+   
+   
+   
+   
+   <br>
+   
+   <br><a name="id0xffffffffff9d4180"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 7 : la méthode <img style="" src="tp3.xml_fichiers/rectangle.gif" width="" height=""></td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+   
+   <p class="java">
+      Ecrivons la classe Test71 suivante :<br><br>
+      
+      <code>
+      public class Test71                                      <br>
+      {                                                        <br>
+      &nbsp;&nbsp;&nbsp;public static void main (String[] arg)                <br>
+      &nbsp;&nbsp;&nbsp;{                                                     <br>
+                                                               <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece( "Cube", "Rouge", 6 );        <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p2 = new Piece( "Cube", "Rouge", 6 );        <br>
+                                                               <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p1.toString() );              <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( p2.toString() );              <br>
+                                                               <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print ( p1 == p2 );                     <br>
+                                                               <br>
+      &nbsp;&nbsp;&nbsp;}                                                     <br>
+      }                                                        <br>
+      
+      </code>
+   
+   </p>
+   
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">7.1&nbsp;</td><td colspan="2" valign="top">
+         Sans compiler, qu'affiche ce programme <i>Test71</i> ?
+      </td></tr>
+      <tr><td width="3%" valign="top">7.2&nbsp;</td><td colspan="2" valign="top">
+         Compiler, et vérifier la réponse à la question précédente.
+      </td></tr>
+      <tr><td width="3%" valign="top">7.3&nbsp;</td><td colspan="2" valign="top">
+         Que faudrait-il faire pour comparer le contenu de ces deux objets.
+      </td></tr>
+   </tbody></table></div></div></div>
+
+
+   <p class="java">
+      Avant d'écrire le code de la méthode spécifique <img style="" src="tp3.xml_fichiers/rectangle.gif" width="" height="">, nous devons définir quel est le critère d'égalité.<br>
+      Nous pourrions en effet dire que deux objets de type <i>Piece</i> sont identiques s'ils ont la même forme ou la même couleur ou la même taille 
+      ou le même numéro d'instance ou toute autre association de ces quatre caractéristiques.<br>
+      Il parait évident que si nous tenons compte du numéro d'instance 
+dans la comparaison du contenu de deux objets, nous n'aurons 
+      jamais deux objets identiques, à moins que ce soit le même objet.<br>
+      Donc nous ne sommes pas obligés de prendre en compte tous les 
+attributs pour comparer le contenus de deux objets, tout dépend 
+      des spécificités de notre domaine d'étude.<br><br>
+      
+      <img style="" src="tp3.xml_fichiers/attention.gif" width="" height="">  &nbsp;&nbsp;<b>
+      Pour cet exercice nous ne retiendrons que les critères de <i>forme</i> et de <i>couleur</i></b><br>
+      Nous verrons peut-être ultérieurement à appliquer d'autres critères. 
+
+   </p>
+      
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">7.4&nbsp;</td><td colspan="2" valign="top">
+         Quel est le nom de la méthode <img style="" src="tp3.xml_fichiers/rectangle.gif" width="" height=""> ?
+      </td></tr> 
+      <tr><td width="3%" valign="top">7.5&nbsp;</td><td colspan="2" valign="top">
+         Ecrire le code de cette méthode, et la tester avec le programme <i>Test72</i> (incomplet).
+      </td></tr> 
+   </tbody></table></div></div></div>
+   
+   <p class="java">
+      <code>
+      public class Test72                                                    <br>
+      {                                                                      <br>
+      &nbsp;&nbsp;&nbsp;public static void main (String[] arg)                              <br>
+      &nbsp;&nbsp;&nbsp;{                                                                   <br>
+                                                                             <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Rouge", 4 );                  <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p2 = new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Rouge", 6 );                  <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p3 = new Piece( "Pyramide",&nbsp;"Verte", 4 );                  <br>
+                                                                             <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( 
+"comparaison p1 p2 : " + 
+p1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(p2) );<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( 
+"comparaison p1 p3 : " + 
+p1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(p3) );<br>
+      &nbsp;&nbsp;&nbsp;}                                                                   <br>
+      }                                                                      <br> 
+      </code>
+      
+   </p>
+   
+   <p class="java">
+   
+      Maintenant retester avec le programme suivant : <br>
+   
+      <code>
+      public class Test73                                                    <br>
+      {                                                                      <br>
+      &nbsp;&nbsp;&nbsp;public static void main (String[] arg)                              <br>
+      &nbsp;&nbsp;&nbsp;{                                                                   <br>
+                                                                             <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print ( " couleur p1 : " );                           <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clavier.lireString(), 4 );     <br>
+                                                                             <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print ( " couleur p2 : " );                           <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p2 = new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clavier.lireString(), 6 );     <br>
+                                                                             <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print ( " couleur p3 : " );                           <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p3 = new Piece( "Pyramide",&nbsp;Clavier.lireString(), 4 );     <br>
+                                                                             <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( 
+"comparaison p1 p2 : " + 
+p1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(p2) );<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( 
+"comparaison p1 p3 : " + 
+p1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(p3) );<br>
+      &nbsp;&nbsp;&nbsp;}                                                                   <br>
+      }                                                                      <br> 
+      </code>
+      
+      <br><br>
+      et faites les saisies suivantes : <br>
+      couleur p1 : <u>Rouge</u> <br>
+      couleur p2 : <u>Rouge</u> <br>
+      couleur p3 : <u>Verte</u> <br>
+
+   </p>
+   
+   
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">7.3&nbsp;</td><td colspan="2" valign="top">
+         Obtenez-vous toujours le même résultat, si oui, c'est que le code de votre méthode
+         <img style="" src="tp3.xml_fichiers/rectangle.gif" width="" height=""> était correct, sinon ....
+      </td></tr> 
+   </tbody></table></div></div></div>
+      
+
+   
+
+   <p class="javaBordure1
+                     ">
+      Désormais, nous nous efforcerons de toujours définir une telle méthode pour chacune de nos classes.
+   </p>
+   
+
+
+   
+   
+   
+   
+   <br>
+   
+   <br><a name="id0xffffffffff9daf00"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 8 : la méthode <img style="" src="tp3.xml_fichiers/cercle.gif" width="" height=""></td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+   
+   <p class="java">
+      
+      Nous souhaitons en plus de savoir si une <i>Piece</i> est différente d'une autre, savoir si elle inférieure ou supérieure à une autre <i>Piece</i>.
+      Nous disposons pour cela de la méthode <img style="" src="tp3.xml_fichiers/cercle.gif" width="" height=""> qui permet de comparer deux instances entre elle, tout comme les 
+      opérateurs &lt;, &lt;=, &gt; et &gt;= comparent des nombres.<br><br>
+      
+      <table name="class" style="" class="java" border="
+                        0
+                     ">
+         <tbody><tr class="table-ligne" style="">
+            <td style="" rowspan="" colspan="" width="" valign="" align="">Lorsque la méthode <img style="" src="tp3.xml_fichiers/cercle.gif" width="" height="">                        </td>
+            <td style="" rowspan="" colspan="" width="" valign="" align="">retourne une valeur négative                                                     </td>
+            <td style="" rowspan="" colspan="" width="" valign="" align="">cela signifie que l'objet courant est plus petit que l'objet passé en paramètre. </td>
+         </tr>
+         <tr class="table-ligne" style="">
+            <td style="" rowspan="" colspan="" width="" valign="" align="">Lorsque la méthode <img style="" src="tp3.xml_fichiers/cercle.gif" width="" height="">                        </td>
+            <td style="" rowspan="" colspan="" width="" valign="" align="">retourne une valeur positive                                                     </td>
+            <td style="" rowspan="" colspan="" width="" valign="" align="">cela signifie que l'objet courant est plus grand que l'objet passé en paramètre. </td>
+         </tr>
+         <tr class="table-ligne" style="">
+            <td style="" rowspan="" colspan="" width="" valign="" align="">Lorsque la méthode <img style="" src="tp3.xml_fichiers/cercle.gif" width="" height="">                        </td>
+            <td style="" rowspan="" colspan="" width="" valign="" align="">retourne la valeur 0                                                             </td>
+            <td style="" rowspan="" colspan="" width="" valign="" align="">cela signifie que les deux objets (courants et en paramètre) ont le même contenu.</td>
+         </tr>
+         
+      </tbody></table>
+      
+      <br>
+      
+   </p>
+      
+   <p class="javaBordure1
+                     ">
+      
+      <b>Attention</b> la notion d'ordre entre les instances est à définir selon certains critères (attributs) comme nous avons pu le faire avec 
+      la méthode <img style="" src="tp3.xml_fichiers/rectangle.gif" width="" height="">.<br>
+      Si rien n'empêche les méthodes <img style="" src="tp3.xml_fichiers/rectangle.gif" width="" height=""> et <img style="" src="tp3.xml_fichiers/cercle.gif" width="" height=""> d'avoir des critères différents,
+      Java Préconise vivement qu'il y ait une cohérence entre ces deux méthodes.<br><br>
+   </p>
+   
+   <p class="java">
+      <img style="" src="tp3.xml_fichiers/attention.gif" width="" height="">  &nbsp;&nbsp;<b>Pour cet exercice nous ne retiendrons que le critère de <i>taille</i></b><br><br>
+   </p>     
+      
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">8.1&nbsp;</td><td colspan="2" valign="top">
+         Quelle est le nom de la méthode <img style="" src="tp3.xml_fichiers/cercle.gif" width="" height=""> ?
+      </td></tr> 
+      <tr><td width="3%" valign="top">8.2&nbsp;</td><td colspan="2" valign="top">
+         Ecrire le code de cette méthode, et la tester avec le programme <i>Test8</i> (incomplet).<br>
+         Nota : cette méthode prend en Paramètre une variable de type <i>Piece</i>.
+      </td></tr> 
+   </tbody></table></div></div></div>     
+      
+   <p class="java">
+      <code>
+         public class Test8                                                              <br>
+         {                                                                               <br>
+         &nbsp;&nbsp;&nbsp;public static void main (String[] arg)                                       <br>
+         &nbsp;&nbsp;&nbsp;{                                                                            <br>
+                                                                                         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p1 = new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Rouge", 4 );                      
+     <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p2 = new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Rouge", 6 );                      
+     <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Piece p3 = new Piece( "Pyramide",&nbsp;"Verte", 4 );                           <br>
+                                                                                         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( 
+"comparaison p1 p2 : " + 
+p1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ (p2) );     <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( 
+"comparaison p1 p3 : " + 
+p1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ (p3) );     <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( 
+"comparaison p2 p3 : " + 
+p2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ (p3) );     <br>
+         &nbsp;&nbsp;&nbsp;}                                                                            <br>
+         }                                                                               <br>
+      </code>
+   </p>
+   
+
+
+   
+   
+   
+   
+   <br>
+   
+   <br><a name="id0xffffffffff9dfd80"></a><table class="java" width="100%" border="0"><tbody><tr><td class="javaSousTitre">Exercice 9 : exemple de mise en application</td><td align="right"><a href="#haut" class="javaLienMini">
+                        retour haut de page
+                     </a></td></tr></tbody></table>
+   
+   
+   <p class="java">
+      Soit la classe <i>Piece</i> (incomplète) suivante :<br><br>
+
+      <code>
+         public class Piece implements Comparable&lt;Piece&gt;                                                              <br>
+         {                                                                                                                 <br>
+         &nbsp;&nbsp;&nbsp;private static int cptInstance;              
+                                                                  <br>
+                                                                                                                           <br>
+         &nbsp;&nbsp;&nbsp;private String forme;                        
+                                                                  <br>
+         &nbsp;&nbsp;&nbsp;private String couleur;                      
+                                                                  <br>
+         &nbsp;&nbsp;&nbsp;private int&nbsp;&nbsp;&nbsp; taille;        
+                                                                        
+         <br>
+         &nbsp;&nbsp;&nbsp;private int&nbsp;&nbsp;&nbsp; numInstance;   
+                                                                        
+         <br>
+                                                                                                                           <br>
+         &nbsp;&nbsp;&nbsp;public String toString()                     
+                                                                  <br>
+         &nbsp;&nbsp;&nbsp;{                                            
+                                                                  <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "(" + numInstance 
++"/" + cptInstance +") [" + forme + " : " + couleur + " (" + taille +" 
+cm) ]";     <br>
+         &nbsp;&nbsp;&nbsp;}                                            
+                                                                  <br>
+                                                                                                                           <br>
+         &nbsp;&nbsp;&nbsp;public Piece()                               
+                                                                  <br>
+         &nbsp;&nbsp;&nbsp;{                                            
+                                                                  <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this("Sphere", "Bleue", 4 
+);                                                                      
+          <br>
+         &nbsp;&nbsp;&nbsp;}                                            
+                                                                  <br>
+                                                                                                                           <br>
+         &nbsp;&nbsp;&nbsp;public Piece(String forme, String couleur, 
+int taille)                                                         <br>
+         &nbsp;&nbsp;&nbsp;{                                            
+                                                                  <br>
+         
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.forme&nbsp;&nbsp;&nbsp;= forme;
+                                                                        
+               <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.couleur = couleur;    
+                                                                        
+         <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.taille&nbsp;&nbsp;= 
+taille;                                                                 
+                     <br>
+                                                                                                                           <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numInstance  = 
+++cptInstance;                                                          
+                     <br>
+         &nbsp;&nbsp;&nbsp;}                                            
+                                                                  <br>
+                                                                                                                           <br>
+         }                                                                                                                 <br>
+      </code>
+      
+      <br><br>
+      Pour le moment nous n'entrerons pas dans le détail de l'instruction : <code>implements Comparable&lt;Piece&gt;</code><br>
+      Retenons uniquement que cela nous oblige à définir une méthode int compareTo(Piece p) dans la classe <i>Piece</i>.<br>
+      <br>
+      Nous vous proposons également la Classe <i>Test9</i> suivante :<br>
+      
+      <code>
+         import java.util.ArrayList;                                                                                      <br>
+         import java.util.Collections;                                                                                    <br>
+                                                                                                                          <br>
+         public class Test9                                                                                               <br>
+         {                                                                                                                <br>
+         &nbsp;&nbsp;&nbsp;public static void main (String[] arg)       
+                                                                 <br>
+         &nbsp;&nbsp;&nbsp;{                                            
+                                                                 <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ArrayList&lt;Piece&gt; tab =
+ new ArrayList&lt;Piece&gt;();                                          
+         <br>
+                                                                                                                          <br>
+                                                                                                                          <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tab.add ( new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Rouge", 1 ) );                    
+                                       <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tab.add ( new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Rouge", 7 ) );                    
+                                       <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tab.add ( new Piece( 
+"Sphere",&nbsp;&nbsp;&nbsp;"Mauve", 2 ) );                              
+                             <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tab.add ( new Piece( 
+"Pyramide",&nbsp;"Rouge", 4 ) );                                        
+                   <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tab.add ( new Piece( 
+"Cube",&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Cyan",&nbsp; 1 ) );               
+                                            <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tab.add ( new Piece( 
+"Pyramide",&nbsp;"Verte", 3 ) );                                        
+                   <br>
+                                                                                                                          <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( tab );
+                                                                        
+        <br>
+                                                                                                                          <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collections.sort ( tab );  
+                                                                        
+        <br>
+                                                                                                                          <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println ( tab );
+                                                                        
+        <br>
+         &nbsp;&nbsp;&nbsp;}                                            
+                                                                 <br>
+         }                                                                                                                <br>
+      </code>
+   </p>
+
+   <div style="display:table"><div style="display: table-row;"><div class="cadreTravailHaut" style="display: table-cell;">
+         &nbsp;&nbsp;<b>Travail à Faire</b></div></div><div style="display: table-row;"><div class="cadreTravailBas" style="display: table-cell;"><table class="java">
+      <tbody><tr><td width="3%" valign="top">9&nbsp;</td><td colspan="2" valign="top">
+         Ajouter la méthode compareTo définie dans l'exercie 8 à cette dernière version de la classe <i>Piece</i>.<br>
+         Compiler <i>Piece</i> et <i>Test9</i>, puis exécuter.<br>
+         Discutons.
+      </td></tr> 
+      
+   </tbody></table></div></div></div>
+   
+   <p class="java">
+   	<br><br><b>Pour la prochaine séance relire le chapitre XVII du cours et également les illustrations.</b><br><br><br><br>
+   </p>
+   
+</body></html>

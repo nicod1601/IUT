@@ -1,0 +1,213 @@
+/* Header Styles */
+.container image{
+    width: 300px;
+}
+
+header {
+    background-image: url(./img/a4f1f3572c496388dc97b925d4c1508f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+body {
+    background-color: #252526; /* Couleur de fond par défaut */
+}
+
+/* Styles de layout pour le contenu principal avec menu */
+.content {
+    display: flex; 
+}
+
+/* Styles pour la barre latérale */
+.menu {
+    width: 250px; 
+    background-color: #1b1b1b; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin-right: 20px; 
+}
+
+/* Styles pour les titres du menu */
+.menu h2 {
+    font-size: 1.8rem;
+    color: #61dafb;
+}
+
+/* Liste du menu sans puces */
+.menu ul {
+    list-style-type: none;
+}
+
+/* Styles pour les liens dans le menu */
+.menu a {
+    color: #ebe6e6; 
+    text-decoration: none; 
+    padding: 10px 0; 
+    display: block;
+    transition: color 0.3s ease; 
+}
+
+.menu a:hover {
+    color: #007acc;
+}
+
+/* Styles pour le contenu principal */
+.main-content {
+    flex-grow: 1; 
+    padding: 20px; 
+    border-radius: 10px;
+    background-color: #252526; 
+}
+
+.main-content h2 {
+    font-size: 2.5rem;
+    color: #61dafb;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007acc;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+
+
+/*---style section -----*/
+section {
+    padding: 20px; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+}
+
+/* Arrière-plans pour chaque section */
+.gold-hoarders {
+    background-image: url(../img/chercheur-dor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; /* Assurer que le texte n'est pas collé au bord */
+}
+
+/* Styles de titres pour les sections */
+.gold-hoarders h2 {
+    font-size: 2rem;
+    color: #e4fb61; 
+}
+
+/* Styles pour le texte des sections */
+.gold-hoarders p {
+    font-size: 1rem;
+    color: #d4d4d4; 
+}
+
+.order-of-souls {
+    background-image: url(../img/orde-des-ames.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; 
+}
+
+
+/* Styles de titres pour les sections */
+.order-of-souls h2 {
+    font-size: 2rem;
+    color: #e4fb61; 
+}
+
+/* Styles pour le texte des sections */
+.order-of-souls p {
+    font-size: 1rem;
+    color: #d4d4d4; 
+}
+
+
+.merchant-alliance {
+    background-image: url(../img/Alliance_des_marchands.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; 
+}
+
+
+/* Styles de titres pour les sections */
+.merchant-alliance h2 {
+    font-size: 2rem;
+    color: #e4fb61; 
+}
+
+/* Styles pour le texte des sections */
+.merchant-alliance p {
+    font-size: 1rem;
+    color: white; 
+}
+
+
+
+/* Styles similaires pour les autres sections si nécessaire */
+.hunter-call {
+    background-image: url(../img/hunter-call-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; 
+}
+
+
+/* Styles de titres pour les sections */
+.hunter-call h2 {
+    font-size: 2rem;
+    color: #e4fb61; 
+}
+
+/* Styles pour le texte des sections */
+.hunter-call p {
+    font-size: 1rem;
+    color: white; 
+}
+
+.reapers-bones {
+    background-image: url(../img/reapers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; 
+}
+
+
+/* Styles de titres pour les sections */
+.reapers-bones h2 {
+    font-size: 2rem;
+    color: #e4fb61; 
+}
+
+/* Styles pour le texte des sections */
+.reapers-bones p {
+    font-size: 1rem;
+    color: white; 
+}
+
+.video h2 {
+    font-size: 2rem;
+    color: #e4fb61;
+    text-align: center; 
+}
+
+.video video{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}

@@ -1,0 +1,302 @@
+<!- ------------------------------- -->
+<!- CSS crée par Philippe Le Pivert -->
+<!-                                 -->
+<!- ------------------------------- -->
+
+body { background-color:#C0C0FF }
+
+.indexFond1 { background-color:#ADBFCF; overflow-x: hidden; }
+.indexFond2 { background-color:#CAD4DC; overflow-x: hidden; }
+.indexFond3 { background-color:#D9E1E7; overflow-x: hidden; }
+.indexFond4 { background-color:#095379; overflow-x: hidden; }
+
+.indexFond5 { background-color:#FF8800; overflow-x: hidden; }
+
+
+.langages { background-color:#6699CC;cursor:hand}
+.menuh    { background-color:#B2BFCE;}
+.menu     { background-color:''}
+.lienmenu { text-decoration:none}
+
+.mlienconf          { color:#1B4A0C;text-decoration: none; font-size:14px ;}
+.mlienconf:hover    { color:#1B4A0C;text-decoration:underline overline;}
+.mlientp       	    { color:#103E46;text-decoration: none; font-size:14px ;}
+.mlientp:hover      { color:#103E46;text-decoration:underline overline;}
+
+.mlienjava           { color:#371951;text-decoration: none; font-size:14px ;}
+.mlienjava:hover     { color:#371951;text-decoration:underline overline; }
+.mlienindex          { color:#371951;text-decoration: none; font-size:14px ; line-height:18px}
+.mlienindex:hover    { color:#371951;text-decoration:underline overline; line-height:18px}
+.mlienalgo           { color:#004000;text-decoration: none; font-size:14px ;}
+.mlienalgo:hover     { color:#004000;text-decoration:underline overline;}
+.mliendivers         { color:#793900;text-decoration: none; font-size:14px ;}
+.mliendivers:hover   { color:#793900;text-decoration:underline overline;}
+
+.acc	 {font-size:14px; color:#000000}
+.accsel  {font-size:14px; font-weight:bold; color:#000000}
+
+.organi  	{font-size:14px ; color:#780E06}
+.conf    	{font-size:14px ; color:#1B4A0C}
+.tp      	{font-size:14px ; color:#101010}
+.tpEnLigne      {font-size:14px ; color:#AA00FF}
+.interro 	{font-size:14px ; color:#DE2F00}
+.cours   	{font-size:14px ; color:#4C0759}
+
+
+.javaH1	  {color:#371951}
+.algoH1	  {color:#004000}
+.diversH1 {color:#793900}
+
+.javaCouleur   {color:#371951 }
+.algoCouleur   {color:#004000 }
+.diversCouleur {color:#793900 }
+.coursCouleur  {color:#4C0759 }
+
+
+.java    {font-size:14px ; color:#371951; line-height:15px }
+.algo	 {font-size:14px ; color:#004000; line-height:15px }
+.divers  {font-size:14px ; color:#793900; line-height:15px }
+.grise   {font-size:14px ; color:#B2ADA4; line-height:15px }
+
+.faqq    {font-weight: bold; color:#6D0793}
+.faqd    {font-size:9px; color:#6D0793}
+
+.javalien          {font-size:14px ; color:#371951; line-height:15px }
+.javalien:visited  {font-size:14px ; color:#4F1E78; line-height:15px }
+.javalien:hover    {font-size:14px ; color:#294CCD; line-height:15px }
+.javalien:active   {font-size:14px ; color:#4F1E78; line-height:15px }
+
+.diverslien          {font-size:14px ; color:#793900; line-height:15px }
+.diverslien:visited  {font-size:14px ; color:#793900; line-height:15px }
+.diverslien:hover    {font-size:14px ; color:#DD700F; line-height:15px }
+.diverslien:active   {font-size:14px ; color:#DD700F; line-height:15px }
+
+.algolien          {font-size:14px ; color:#025000; line-height:15px }
+.algolien:visited  {font-size:14px ; color:#025000; line-height:15px }
+.algolien:hover    {font-size:14px ; color:#078000; line-height:15px }
+.algolien:active   {font-size:14px ; color:#078000; line-height:15px }
+
+.tplien          {font-size:14px ; color:#505090; line-height:15px }
+.tplien:visited  {font-size:14px ; color:#505090; line-height:15px }
+.tplien:hover    {font-size:14px ; color:#303090; line-height:15px }
+.tplien:active   {font-size:14px ; color:#303090; line-height:15px }
+
+.courslien          {font-size:14px ; color:#4C0759; line-height:15px }
+.courslien:visited  {font-size:14px ; color:#4C0759; line-height:15px }
+.courslien:hover    {font-size:14px ; color:#E515DE; line-height:15px }
+.courslien:active   {font-size:14px ; color:#E515DE; line-height:15px }
+
+.organiTitre  {font-size:20px ; font-weight:bold; color:#780E06}
+.confTitre    {font-size:20px ; font-weight:bold; color:#1B4A0C}
+.tpTitre      {font-size:20px ; font-weight:bold; color:#101010}
+
+.javaTitre    {font-size:20px ; font-weight:bold; color:#371951}
+.algoTitre    {font-size:20px ; font-weight:bold; color:#004000}
+.diversTitre  {font-size:20px ; font-weight:bold; color:#793900}
+
+.organiSousTitre  {font-size:16px ; font-weight:bold; color:#780E06; text-decoration:underline}
+.confSousTitre    {font-size:16px ; font-weight:bold; color:#1B4A0C; text-decoration:underline}
+.tpSousTitre      {font-size:16px ; font-weight:bold; color:#101010; text-decoration:underline}
+
+.javaSousTitre    {font-size:16px ; font-weight:bold; color:#371951; text-decoration:underline}
+.algoSousTitre    {font-size:16px ; font-weight:bold; color:#004000; text-decoration:underline}
+.diversSousTitre  {font-size:16px ; font-weight:bold; color:#793900; text-decoration:underline}
+
+.organiSousSousTitre  {font-weight:bold; color:#780E06;text-decoration:underline}
+.confSousSousTitre    {font-weight:bold; color:#1B4A0C;text-decoration:underline}
+.tpSousSousTitre      {font-weight:bold; color:#101010;text-decoration:underline}
+
+.javaSousSousTitre    {font-weight:bold; color:#371951;text-decoration:underline}
+.algoSousSousTitre    {font-weight:bold; color:#004000;text-decoration:underline}
+.diversSousSousTitre  {font-weight:bold; color:#793900;text-decoration:underline }
+
+
+.organiMini {font-size:10px ; color:#780E06}
+.confMini   {font-size:10px ; color:#1B4A0C}
+.tpMini     {font-size:10px ; color:#101010}
+
+.javaMini   {font-size:10px ; color:#371951}
+.algoMini   {font-size:10px ; color:#004000}
+.diversMini {font-size:10px ; color:#101010}
+
+.organiLienMini {font-size:12px ; text-decoration: none; color:#780E06}
+.confLienMini   {font-size:12px ; text-decoration: none; color:#1B4A0C}
+.tpLienMini     {font-size:12px ; text-decoration: none; color:#101010}
+
+.javaLienMini   {font-size:12px ; text-decoration: none; color:#371951}
+.algoLienMini   {font-size:12px ; text-decoration: none; color:#004000}
+.diversLienMini {font-size:12px ; text-decoration: none; color:#793900}
+
+.javaBordure1	{font-size:14px ; color:#371951; border-style:solid;border-color: #371951;border-width: 1px;padding: 5px }
+.algoBordure1	{font-size:14px ; color:#004000; border-style:solid;border-color: #004000;border-width: 1px;padding: 5px }
+.diversBordure1	{font-size:14px ; color:#793900; border-style:solid;border-color: #793900;border-width: 1px;padding: 5px }
+
+.javaBordure2	{font-size:14px ; color:#371951; border-style:solid;border-color: #371951;border-width: 3px;padding: 5px }
+.algoBordure2	{font-size:14px ; color:#004000; border-style:solid;border-color: #004000;border-width: 3px;padding: 5px }
+.diversBordure2	{font-size:14px ; color:#793900; border-style:solid;border-color: #793900;border-width: 3px;padding: 5px }
+
+
+.cadresimple { border-style:solid; border-width:1px; border-radius:10px; border-color:#3A4476; 
+               margin: 0px; padding:10px; box-shadow: 5px 5px 5px #AAAAAA; background-color:#EFEFEF ; width:100%;
+             }
+
+.cadredouble { border-style:solid; border-width:1px; border-radius:10px; border-color:#3A4476; 
+               margin: 0px; padding:10px; box-shadow: 5px 5px 5px #AAAAAA; background-color:#EFEFEF ; width:50%;
+             }
+
+.cadreTravailHaut { border-style:solid; border-width:1px; 
+                    border-top-left-radius:10px;
+	            border-top-right-radius:10px;
+	            border-color:#3951C7; 
+                    margin: 0px; padding:3px;  background-color:#535C82 ; width:100%; font-size:14px; color:#FFFFFF;
+             }
+
+.cadreTravailBas {  border-style:solid; border-width:1px; 
+                    border-bottom-right-radius:10px;
+		    border-bottom-left-radius:10px;
+	            border-color:#3951C7; 
+                    margin: 0px; padding:2px;  background-color:#EFEFEF ; width:100%; 
+             }
+             
+             
+.drop { position: absolute; width: 3;  filter: flipV(), flipH(); font-size: 40; color: blue }
+.console { background-color: #101010; color:white;  border-style:solid; border-width:1px; border-color:white;  
+                    border-radius: 5px ;
+		    border-bottom-left-radius:5px;  padding:8px;}
+
+ul#onglet {
+    font: bold 11 verdana, arial, sans-serif;
+    list-style-type: none;
+      
+    margin: 0 0 0 0;
+}
+
+ul#onglet li {
+    float: left;
+    height: 24px;
+    background-color: #e7e3e3;
+    margin: 1px 1px 0 1px;
+    border: 1px solid #98b6f2;
+}
+
+ul#onglet li.active {
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+ul#onglet li.active a {
+    color: #000;
+}
+
+#onglet a {
+    float: left;
+    display: block;
+    color: #aaaaaa;
+    text-decoration: none;
+    padding: 4px;
+    valign: top;
+}
+
+div#onglet{
+	border-width:1px; 
+	border-style:solid; 
+	border-color:#98b6f2;
+}
+
+table#onglet td#onglet{
+	border-width:1px; 
+	border-style:solid; 
+	border-color:#98b6f2;
+	
+}
+
+table#index {
+	border-width:1px; 
+	border-style:solid; 
+	border-color:#000000;
+	background-color:#EFEFEF;
+	color:#253048
+	
+	
+}
+
+table td#index{
+	border-width:1px; 
+	border-style:solid; 
+	border-color:#000000;
+	background-color:#EFEFEF;
+	color:#253048
+	
+	
+}
+	
+
+
+/* Style pour tableau */
+
+/* Style des en-têtes du tableau (centré) */
+.table-entete {
+	text-align : center;
+	font-weight : bold;
+	background-color : #a7ada7;
+}
+
+.table-ligne0 {
+	text-align : center;
+	font-weight : bold;
+	background-color : #a7ada7;
+}
+
+/* Style 1 des cellules */
+.table-ligne1 {
+	background-color : #c6c3bd;
+}
+
+/* Style 2 des cellules */
+.table-ligne2 {
+	background-color : #cccccc;
+}
+
+/* Style 3 des cellules */
+.table-ligne3 {
+	background-color : #BDE6F3;
+}
+
+
+
+.table-fine {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+
+<!- ------------------------------- -->
+<!- CSS crée par Philippe Le Pivert -->
+<!- revue de Presse                 -->
+<!- ------------------------------- -->
+
+
+.headerPresse		{color:#3B0660}
+.headerProg		{color:#0B5110}
+.headerCarriere		{color:#121B74}
+.headerOrganisation	{color:#AA0000}
+.headerTechno		{color:#F27A04}
+.headerInternet		{color:#1B8889}
+
+.paraPresse		{font-size:13px ; color:#3B0660}
+.paraProg		{font-size:13px ; color:#0B5110}
+.paraCarriere		{font-size:13px ; color:#121B74}
+.paraOrganisation	{font-size:13px ; color:#AA0000}
+.paraTechno		{font-size:13px ; color:#F27A04}
+.paraInternet		{font-size:13px ; color:#1B8889}
+
+.lienProg		{ font-size:13px; color:#0B5110; text-decoration: none; }
+.lienProg:hover		{ font-size:13px; color:#0B5110; text-decoration: underline overline;}
+.lienCarriere		{ font-size:13px; color:#121B74; text-decoration: none; }
+.lienCarriere:hover	{ font-size:13px; color:#121B74; text-decoration: underline overline;}
+.lienTechno		{ font-size:13px; color:#F27A04; text-decoration: none; }
+.lienTechno:hover	{ font-size:13px; color:#F27A04; text-decoration: underline overline;}
+.lienOrganisation	{ font-size:13px; color:#AA0000; text-decoration: none; }
+.lienOrganisation:hover	{ font-size:13px; color:#AA0000; text-decoration: underline overline;}
+.lienInternet		{ font-size:13px; color:#1B8889; text-decoration: none; }
+.lienInternet:hover	{ font-size:13px; color:#1B8889; text-decoration: underline overline;}

@@ -1,0 +1,163 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Styles */
+.header-sea-of-thieves {
+    background: linear-gradient(90deg, #2a4d69, #4b86b4);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 5px solid #1d3557;
+}
+
+.header-sea-of-thieves .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-sea-of-thieves img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+.header-sea-of-thieves h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Content Wrapper */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Menu Styles */
+.menu {
+    background-color: #2a4d69;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0.5rem 0;
+}
+
+.menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #a0c4ff;
+}
+
+/* Description Styles */
+.description {
+    background-color: #4b86b4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.description h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.description p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Table Styles */
+.tabimage table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabimage th, .tabimage td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabimage th {
+    background-color: #2a4d69;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabimage tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tabimage img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+
+    .header-sea-of-thieves h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .description h2 {
+        font-size: 1.5rem;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+}
+

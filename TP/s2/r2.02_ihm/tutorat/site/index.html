@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Helldivers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            background-image: url('helldivers-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .countdown {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+        }
+        .countdown h2 {
+            font-size: 24px;
+            color: #ffcc00;
+        }
+        #timer {
+            font-size: 40px;
+            font-weight: bold;
+            color: #ff4444;
+            margin-top: 10px;
+            text-shadow: 0 0 10px rgba(255, 68, 68, 0.8);
+        }
+        .task-section {
+            display: none;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+            margin-top: 50px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ffaa00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mission Helldivers</h1>
+    <div class="countdown">
+        <h2>Décompte avant la Mission :</h2>
+        <p id="timer"></p>
+    </div>
+    <div class="task-section">
+        <h2>IHM</h2>
+        <p>Votre mission est faire une page de Identification pour les Helldivers:</p>
+        <ul>
+            <li><strong>FrameID.java</strong> - Gère la fenêtre de notre application</li>
+            <li><strong>PanelID.java</strong> - Gère tous se qui interraction et composant de notre application</li>
+        </ul>
+        <button class="btn" onclick="downloadFile('./fiche/FrameID.java')">FrameID.java</button>
+        <button class="btn" onclick="downloadFile('./fiche/PanelID.java')">PanelID.java</button>
+    </div>
+
+    <script>
+        const targetDate = new Date('2025-03-27T20:15:00'); // Cible : 24 mars 2025 à 20h15 (UTC local)
+        const eventTime = targetDate.getTime(); // Heure cible en millisecondes
+
+        function updateCountdown() {
+            const now = Date.now(); // Temps actuel en millisecondes
+            const diff = eventTime - now; // Différence en millisecondes
+
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24)); // Jours restants
+                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24); // Heure
+                const minutes = Math.floor((diff / (1000 * 60)) % 60); // Minutes
+                const seconds = Math.floor((diff / 1000) % 60); // Secondes
+
+                document.getElementById("timer").innerText = `${days}j ${hours}h ${minutes}m ${seconds}s`; // Affiche le compte à rebours
+                setTimeout(updateCountdown, 1000);
+            } else {
+                document.querySelector(".countdown").style.display = "none";
+                document.querySelector(".task-section").style.display = "block";
+            }
+        }
+        updateCountdown();
+
+        function downloadFile(filename) {
+            const link = document.createElement("a");
+            link.href = filename;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+import iut.algo.Clavier;
+import iut.algo.ControleurGraphique;
+
+
+/**
+ * @author : Delpech Nicolas
+ * @version : 1.0
+ * @date : 30/11/2021
+ * 
+ * RobotTracer
+ */
+
+public class T
+{
+    public static void main(String[] args) 
+    {
+        /*------------*/
+        /* Variables  */
+        /*------------*/
+
+       
+        /*--------------*/
+        /* Instruction  */
+        /*--------------*/
+        
+        // commande
+        (int) Math.random()*1 == 0 à 1
+        (int)(Math.random() * 11) - 5; == -5 à 5
+        
+        .equals()
+        ! truc.equals()
+        
+        cara = cara + 1 ou cara++
+        
+        switch( val )
+		{
+			case 0 -> System.out.println ( val + " est un chiffre pair"   );
+			case 2 -> System.out.println ( val + " est un chiffre pair"   );
+			case 4 -> System.out.println ( val + " est un chiffre pair"   );
+			case 6 -> System.out.println ( val + " est un chiffre pair"   );
+			case 8 -> System.out.println ( val + " est un chiffre pair"   );
+
+			case 1 -> System.out.println ( val + " est un chiffre impair" );
+			case 3 -> System.out.println ( val + " est un chiffre impair" );
+			case 5 -> System.out.println ( val + " est un chiffre impair" );
+			case 7 -> System.out.println ( val + " est un chiffre impair" );
+			case 9 -> System.out.println ( val + " est un chiffre impair" );
+		}
+		
+		switch ( variablePrimitive ) 
+		{ 
+   			case literal1 :  
+     			// bloc d'instructions 
+       			break;
+       		case literal1 :  
+     			// bloc d'instructions 
+       			break; 
+       		case literal1 :  
+     			// bloc d'instructions 
+       			break; 
+
+		}
+        
+        
+    }
+
+}
+

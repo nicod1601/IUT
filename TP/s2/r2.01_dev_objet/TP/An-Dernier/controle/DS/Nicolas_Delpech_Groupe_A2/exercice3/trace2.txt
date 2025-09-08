@@ -1,0 +1,63 @@
+-----------------------
+     Exercice 2
+-----------------------
+
+|1|Alea|
+|2|Amigo|
+|3|Atalia|
+|4|Asmodée|
+|5|Bankiiiz|
+|6|Blackrock|
+|7|Blue Orange|
+|8|Bombyx|
+|9|Cocktail Games|
+|10|Days of Wonder|
+|11|Edge|
+|12|Filosofia|
+|13|Game Brewer|
+|14|Garphill Games|
+|15|Geek Attitude Games|
+|16|Gigamic|
+|17|Grrre|
+|18|Hazgaard|
+|19|Huch & Friends|
+|20|Hurrican|
+|21|Iello|
+|22|Intrafin|
+|23|Jeux Descartes|
+|24|La boite de jeu|
+|25|Lautapelit|
+|26|Libellud|
+|27|Lookout Games|
+|28|Ludonaute|
+|29|Lui-même|
+|30|Matagot|
+|31|Moonster|
+|32|Blam !|
+|33|Oink|
+|34|Oldchap|
+|35|Origames|
+|36|Oya|
+|37|Parker|
+|38|Pearl Games|
+|39|Pixie|
+|40|Plaid Hat|
+|41|Plan B|
+|42|Ravensburger|
+|43|Repos Production|
+|44|Schmidt|
+|45|Scorpion masqué|
+|46|Sit Down!|
+|47|Smart Games|
+|48|Sorry We Are French|
+|49|Space Cowboys|
+|50|Steve Jackson Games|
+|51|Stonemaier|
+|52|Super Meeple|
+|53|ThinkFun|
+|54|Tiki|
+|55|Ubik|
+|56|Ystari|
+|57|Catch Up Games|
+|58|Adam's Apple Games|
+|59|Z-Man Games|

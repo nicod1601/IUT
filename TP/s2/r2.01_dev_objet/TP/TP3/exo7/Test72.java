@@ -1,0 +1,13 @@
+public class Test72
+{
+   public static void main (String[] arg)
+   {
+
+      Piece p1 = new Piece( "Cube",     "Rouge", 4 );
+      Piece p2 = new Piece( "Cube",     "Rouge", 6 );
+      Piece p3 = new Piece( "Pyramide", "Verte", 4 );
+
+      System.out.println ( "comparaison p1 p2 : " + p1.equals(p2) );
+      System.out.println ( "comparaison p1 p3 : " + p1.equals(p3) );
+   }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz IHM Java</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz IHM en Java</h1>
+        <p>Testez vos connaissances sur la programmation d'IHM en Java !</p>
+    </header>
+
+    <main>
+        <section id="quiz">
+            <div class="question-container" id="question-container">
+                <h2 id="question">Complétez le code suivant :</h2>
+                <pre id="code-snippet">
+public class MaFenetre extends JFrame {
+    public MaFenetre() {
+        setTitle("Ma Fenêtre");
+        setSize(400, 300);
+        setDefaultCloseOperation(_________);
+        // Ajoutez votre code ici
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new MaFenetre().setVisible(true);
+            }
+        });
+    }
+}
+                </pre>
+
+                <div class="answers">
+                    <button class="answer" data-correct="false">EXIT_ON_CLOSEE</button>
+                    <button class="answer" data-correct="true">EXIT_ON_CLOSE</button>
+                    <button class="answer" data-correct="false">DISPOSE_ON_CLOSE</button>
+                    <button class="answer" data-correct="false">HIDE_ON_CLOSE</button>
+                </div>
+            </div>
+
+            <div id="feedback" class="hidden">
+                <p id="feedback-text">Explications ici...</p>
+                <button id="next-question">Question suivante</button>
+            </div>
+
+            <div class="question-container hidden">
+                <h2>Quelle méthode permet d'ajouter un composant dans une fenêtre ?</h2>
+                <pre>
+JButton button = new JButton("Cliquez ici");
+________.add(button);
+                </pre>
+
+                <div class="answers">
+                    <button class="answer" data-correct="false">this.set(button)</button>
+                    <button class="answer" data-correct="true">this.add(button)</button>
+                    <button class="answer" data-correct="false">this.insert(button)</button>
+                    <button class="answer" data-correct="false">this.put(button)</button>
+                </div>
+            </div>
+
+            <div class="question-container hidden">
+                <h2>Corrigez l'erreur dans ce code :</h2>
+                <pre>
+JPanel panel = new JPanel();
+panel.setLayout(new BorderLayout);
+panel.add(new JButton("Sud"), BorderLayout.SOUTH);
+                </pre>
+
+                <div class="answers">
+                    <button class="answer" data-correct="true">new BorderLayout()</button>
+                    <button class="answer" data-correct="false">new Border()</button>
+                    <button class="answer" data-correct="false">new Layout(Border)</button>
+                    <button class="answer" data-correct="false">BorderLayout()</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Quiz IHM Java - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+ALGORITHME RobotTracer
+variables:
+				action        : chaine de caractère
+
+				orientation : caractère
+				avance      : entier
+				ordX, ordY : entier
+
+DEBUT
+
+			écrire("action :  ")
+			lire(action)
+
+			orientation ←'N'
+			ordX ← ordY ← 100
+
+			tq action ≠ "FIN" faire
+			
+				si appel esEntier(action) = vrai alors
+					
+					avance ← enEntier(action)
+
+					// Les directions sur l'axe de Y pour le Nord et le Sud.
+					si orientation = 'N' alors
+						
+						cordY = cordY - avance
+
+					sinon
+					
+						cordY = cordY + avance
+
+					fsi
+
+					// Les directions sur l'axe de X pour Est et Ouest.
+					si orientation = 'E' alors
+
+						cordX = cordX + avance
+					
+					sinon
+
+						cordX = cordX - avance
+
+					fsi
+
+				sinon
+					
+					// On sauvegarde le changement de l'orientation si action nous indique Droite ou Gauche.
+					orientation ← appel Orientation(action, orientation)
+
+				fsi
+
+				écrire("[" © orientation ©"     "© cordX © ":" © cordY ©"]")
+
+				écrire("action :  ")
+				lire(action)
+			ftq 
+FIN
+
+// Dans notre sous Algo nous avons besoin 2 paramètres car nous avons besoin l'information de action
+// et nous avons besoin retourner une orientation pour changer de sens.
+ALGORITHME Orientation(e action : chaine de caractère , e orientation : caractère) → caractère
+DEBUT
+
+			//Partie Droite.
+			si action = "D" alors
+				
+				si orientation = 'N' alors
+					
+					orientation ← 'E'
+
+				sinon
+
+					si orientation = 'E' alors
+						
+						orientation ←'S'
+
+					sinon
+
+						si orientation = 'S' alors
+							
+							orientation ←'O'
+
+						sinon
+
+							orientation ←'N'
+						fsi
+
+					fsi
+				fsi
+
+			sinon // Partie de Gauche.
+
+				si orientation = 'N' alors
+					
+					orientation ← 'O'
+
+				sinon
+
+					si orientation = 'O' alors
+						
+						orientation ←'S'
+
+					sinon
+
+						si orientation = 'S' alors
+							
+							orientation ←'E'
+
+						sinon
+
+							orientation ←'N'
+
+						fsi
+					fsi
+				fsi
+
+			retourne orientation
+FIN

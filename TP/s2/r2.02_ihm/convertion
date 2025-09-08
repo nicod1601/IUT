@@ -1,0 +1,49 @@
+int monInt = 10;
+double monDouble = monInt; // Conversion implicite de int vers double
+
+double monDouble = 10.99;
+int monInt = (int) monDouble; // Conversion explicite de double vers int
+
+int nombre = 42;
+String texte = String.valueOf(nombre); // Utilisation de String.valueOf()
+String texte2 = Integer.toString(nombre); // Utilisation de Integer.toString()
+
+
+int nombre = Integer.parseInt(texte); // Convertir en int
+double nombre2 = Double.parseDouble(texte); // Convertir en double
+
+boolean valeur = true;
+int nombre = valeur ? 1 : 0; // true devient 1, false devient 0
+
+int x = 5;
+Integer y = x; // Auto-boxing (conversion automatique)
+
+Integer z = 10;
+int w = z; // Auto-unboxing
+
+String texte = "Hello";
+char premierCaractere = texte.charAt(0); // Récupère le premier caractère 'H'
+
+char lettre = 'A';
+int valeurASCII = (int) lettre; // Conversion explicite
+System.out.println(valeurASCII); // Affiche 65 (code ASCII de 'A')
+
+char chiffre = '7';
+int nombre = chiffre - '0'; // Convertit '7' en 7
+System.out.println(nombre); // Affiche 7
+
+int nombre = 5;
+char chiffre = (char) (nombre + '0'); // Convertit 5 en '5'
+System.out.println(chiffre); // Affiche '5'
+
+char[] lettres = {'J', 'a', 'v', 'a'};
+String texte = new String(lettres); // "convertion un tableau de cara en String"
+
+String[] array = {"A", "B", "C"};
+List<String> list = Arrays.asList(array); // convertion d'un tableau en liste
+
+List<String> list = new ArrayList<>(Arrays.asList("A", "B", "C"));
+String[] array = list.toArray(new String[0]); // convertion d'une liste en tableau
+
+String[] array = {"A", "B", "C"};
+String texte = String.join(" ", array); // "A B C"

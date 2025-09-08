@@ -1,0 +1,151 @@
+--------------------
+    Exercice  5
+--------------------
+
+|Les chateaux de bourgogne|Alea|2|4|
+|6 qui prend|Amigo|2|10|
+|Service Compris|Asmodée|2|6|
+|Dobble|Asmodée|2|8|
+|Jungle Speed|Asmodée|2|10|
+|Time's up|Asmodée|4|12|
+|Lorenzo Le Magnifique|Atalia|2|4|
+|Banquet Royal|Bankiiiz|2|4|
+|Armadora|Blackrock|2|4|
+|Kingdomino Duel|Blue Orange|2|2|
+|Kingdomino|Blue Orange|2|4|
+|Slide Quest|Blue Orange|2|4|
+|Abyss|Bombyx|2|4|
+|Conspiracy ( Abyss Universe)|Bombyx|2|4|
+|Les Bâtisseurs - Moyen Âge|Bombyx|2|4|
+|Les Batisseurs - Antiquité|Bombyx|2|4|
+|Imaginarium|Bombyx|2|5|
+|Les Inventeurs|Bombyx|2|5|
+|L'île interdite|Cocktail Games|2|4|
+|Twin it|Cocktail Games|1|99|
+|Les Aventuriers du Rail : Londres|Days of Wonder|2|4|
+|Five Tribes|Days of Wonder|2|4|
+|Les Aventuriers du rail : europe|Days of Wonder|2|5|
+|Les Aventuriers du Rail : Autour du monde|Days of Wonder|2|5|
+|Les Aventuriers du Rail : The United Kingdom|Days of Wonder|2|5|
+|Small World|Days of Wonder|2|5|
+|Small World Underground|Days of Wonder|2|5|
+|Les Aventuriers du Rail - Japon & Italie|Days of Wonder|2|6|
+|Les chevaliers de la Table Ronde|Days of Wonder|3|7|
+|Robinson Crusoé|Edge|1|4|
+|The Resistance|Edge|5|0|
+|Agricola : terre d'élevage|Filosofia|2|2|
+|Catan Duel|Filosofia|2|2|
+|Les Piliers de la terre|Filosofia|2|4|
+|A la gloire d'Odin|Filosofia|1|4|
+|La route du Verre|Filosofia|1|4|
+|L'age de Pierre|Filosofia|2|4|
+|Pandémie|Filosofia|2|4|
+|Bruges|Filosofia|2|4|
+|Puerto Rico|Filosofia|2|5|
+|Terra Mystica|Filosofia|2|5|
+|Caverna|Filosofia|1|7|
+|Gugong|Game Brewer|1|5|
+|Architectes du royaume de l'ouest|Garphill Games|2|5|
+|Bruxelles 1897|Geek Attitude Games|2|4|
+|Bruxelles 1893|Geek Attitude Games|2|5|
+|Great Western|Gigamic|2|4|
+|Descendance|Gigamic|2|4|
+|Cloche Merle|Gigamic|2|4|
+|Dany|Grrre|3|8|
+|Time Line|Hazgaard|2|8|
+|Rajas of Ganges|Huch & Friends|2|4|
+|Mr Jack|Hurrican|2|2|
+|Mr Jack pocket|Hurrican|2|2|
+|Tzolk'in|Iello|2|4|
+|18 minutes pour un empire|Iello|2|4|
+|Welcome to the Dungeon|Iello|2|4|
+|Andor|Iello|2|4|
+|Exit : l'ile oublié|Iello|1|4|
+|Exit : Le cadavre de l'Orient Express|Iello|1|4|
+|Exit : Le Laboratoire Secret|Iello|1|4|
+|Exit : Le Château Interdit|Iello|1|4|
+|Space Alert|Iello|1|5|
+|Detective|Iello|1|5|
+|Code Names|Iello|2|8|
+|Time Bomb|Iello|4|8|
+|Terraforming Mars|Intrafin|1|5|
+|Junta|Jeux Descartes|2|7|
+|Huns|La boite de jeu|2|4|
+|Nations|Lautapelit|1|5|
+|One Key|Libellud|2|6|
+|Dixit|Libellud|3|6|
+|Isle of Skye|Lookout Games|2|5|
+|Lewis & Clark|Ludonaute|1|5|
+|Colt Express|Ludonaute|2|6|
+|La guerre des motouns|Lui-même|2|4|
+|Skull & Roses|Lui-même|3|6|
+|Mafia de cuba|Lui-même|6|12|
+|Les Loups-Garous de Thiercelieux|Lui-même|8|18|
+|Takenoko|Matagot|2|4|
+|Orléans|Matagot|2|4|
+|Cyclade|Matagot|2|5|
+|Room 25|Matagot|1|6|
+|Minivilles|Moonster|2|4|
+|Insider|Oink|4|8|
+|Par Odin|Oldchap|1|1|
+|Fiesta de los Muertos|Oldchap|4|8|
+|Reykholt|Origames|1|4|
+|The mind|Oya|2|4|
+|Cartagena|Oya|2|5|
+|Risk|Parker|2|5|
+|Solenia|Pearl Games|1|4|
+|Tournay|Pearl Games|2|4|
+|Troyes|Pearl Games|2|4|
+|Pillards de la mer du Nord|Pixie|2|4|
+|Mice and Mystics|Plaid Hat|1|4|
+|Azul|Plan B|2|4|
+|Century : la route des épices|Plan B|2|5|
+|Loup-Garou pour une nuit|Ravensburger|3|10|
+|7 wonders Duel|Repos Production|2|2|
+|Ghost Stories|Repos Production|1|4|
+|7 wonders|Repos Production|2|7|
+|Concept|Repos Production|4|12|
+|Mascarade|Repos Production|2|13|
+|Les tavernes de la vallée profonde|Schmidt|2|4|
+|Decrypto|Scorpion masqué|3|8|
+|Magic Maze|Sit Down!|1|8|
+|L'aventurier|Smart Games|1|1|
+|Pingouins patineurs|Smart Games|1|1|
+|Les Murailles de Troie|Smart Games|1|1|
+|Viking : Au coueur du MaelStrom|Smart Games|1|1|
+|Ganymede|Sorry We Are French|2|4|
+|GreenVille|Sorry We Are French|3|6|
+|Orbis|Space Cowboys|2|4|
+|Splendor|Space Cowboys|2|4|
+|T.I.M.E Stories - Asylum|Space Cowboys|2|4|
+|T.I.M.E Stories - La prophétie des dragons|Space Cowboys|2|4|
+|T.I.M.E Stories - Sous le masque|Space Cowboys|2|4|
+|T.I.M.E Stories - Lumen Fidei|Space Cowboys|2|4|
+|T.I.M.E Stories - Frere de la Côte|Space Cowboys|2|4|
+|T.I.M.E Stories - Madame|Space Cowboys|2|4|
+|Unlock : Escape Adventures|Space Cowboys|2|6|
+|Unlock : Secret Adventures|Space Cowboys|2|6|
+|Unlock : Mystery Adventures|Space Cowboys|2|6|
+|Unlock : Timeless Adventures|Space Cowboys|2|6|
+|Munchkin|Steve Jackson Games|3|6|
+|Viticulture|Stonemaier|1|6|
+|Tajuto|Super Meeple|2|4|
+|RushHour|ThinkFun|1|1|
+|Solitaire chess|ThinkFun|1|1|
+|Gaïa|Tiki|2|5|
+|Citadelles|Ubik|2|8|
+|Shakespeare|Ystari|1|4|
+|Myrmes|Ystari|2|4|
+|Agricola|Ystari|1|5|
+|Le Havre|Ystari|1|5|
+|Olympos|Ystari|3|5|
+|Next Station : London|Blue Orange|1|4|
+|Next Station : Tokyo|Blue Orange|1|4|
+|Faraway|Catch Up Games|2|6|
+|Planet Unknown|Adam's Apple Games|1|6|
+|Loco Momo|Blam !|2|4|
+|Forêt Mixte|Lookout Games|2|5|
+|Parks|Matagot|1|5|
+|Biomos|Blackrock|2|4|
+|Hadara|Z-Man Games|2|5|
+|Rauha|Blackrock|2|5|

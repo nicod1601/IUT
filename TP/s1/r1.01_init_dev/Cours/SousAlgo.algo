@@ -1,0 +1,56 @@
++  deplacer(direction : chaine, torique : boolean)
+	début
+		si direction = "N" ou direction = "NO" ou direction = "NE" ou direction = "O" ou direction = "SE" ou direction = "S" ou direction = "SO" ou direction = "E" alors
+			selon(direction)
+				cas "N":
+					this.lig--
+				cas "NO":
+					this.lig-- 
+					this.col--
+				cas "NE":
+					this.lig-- 
+					this.col++
+				cas "S":
+					this.lig++
+				cas "SO":
+					this.lig++
+					this.col--
+				cas "SE":
+					this.lig++
+					this.col++
+				cas "O":
+					this.col--
+				cas "E":
+					this.col++
+			fselon
+
+			si torique alors
+				si this.lig < 0 alors
+					this.lig ← 8 - 1
+				sinon 
+					si this.lig ≥ 8 alors
+					this.lig ← 0
+				fsi
+
+				si this.col < 0 alors
+					this.col ← 8 - 1
+				sinon 
+					si this.col ≥ 8 alors
+					this.col ← 0
+				fsi
+			fsi
+
+			retourne vrai
+		fsi
+
+		retourne faux
+	fin
+
++ public PosY()
+
+retourne 30 + ( 60 *  (ord(this.col) - ord('A')  + 1) )
+
++ public PosX()
+
+retourne 30 + 60 * this.lig
+

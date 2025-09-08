@@ -1,0 +1,4 @@
+deplacer( direction : carcatère, torique : boolean)
+début
+	
+fin

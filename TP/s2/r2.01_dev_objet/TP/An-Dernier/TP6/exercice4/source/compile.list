@@ -1,0 +1,8 @@
+./quarto/Controleur.java
+
+./quarto/metier/Message.java
+./quarto/metier/Piece.java
+./quarto/metier/Plateau.java
+
+./quarto/ihm/FramePlateau.java
+./quarto/ihm/PannelPlateau.java

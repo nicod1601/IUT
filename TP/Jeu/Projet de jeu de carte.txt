@@ -1,0 +1,31 @@
+-------------------------------
+Projet de jeu de carte 
+-------------------------------
+
+- Jeu de carte
+- les Joueurs
+
+---------
+Etape 1
+---------
+
+- faire un jeu classique avec un jeu de carte qui ont des effets de base ( feu, bouclier et soins )
+- faire une barre de HP et de Shield pour le joueur
+- faire une pioche de carte
+- faire une pioche de 5 carte pour chaque joueur
+
+---------
+Etape 2
+---------
+
+- faire une amélioration dans le jeu de carte pour mettre des niveaux pour les carte de (1 à 3)
+- faire une nouvelle fonction pour faire des fusions pour les cartes ex: ( une carte de niv 1 avec une carte de niv 1 = une carte de niv 2)
+mais impossible de fusionner une carte de niv 2 avec une carte de niv 1 et aussi impossible de fusionner une carte de niv 3 avec une carte de niv 3 car c'est le max.
+
+---------
+Etape 3
+---------
+
+- ajouter une nouvelle fonction dans le jeu des personnages qui permet de booste des compétences de carte et pour certain de les nerfs pour avoir un équilibrage dans le jeu aussi
+- on peut choisir au moins 3 personnage dans notre jeux
+- faire des compétences pour chaque personnage qui permet de boost ou nerf sois sur le joueur ou bien sur les cartes
