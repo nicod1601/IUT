@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:\\Users\\nicod\\Documents\\IUT\\Projet\\IUT\\TP\\java\\paquetage_class\\CustomMath.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\nicod\\Documents\\IUT\\Projet\\IUT\\TP\\java\\paquetage_class\\CustomMath.jar"
+        ]
+    }
+}
